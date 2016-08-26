@@ -1,6 +1,6 @@
 # nhs_search_engine
 
-The app is basic REST service built with Spring Boot (http://projects.spring.io/spring-boot/) with 2 functionalities: scraping content from http://nhs.uk website and provide a search engine to search across that content. The OpenNLP library (https://opennlp.apache.org/) has also been used to enhance the search. 
+The app is basic REST service built with Spring Boot (http://projects.spring.io/spring-boot/) with 2 functionalities: scraping content from http://nhs.uk website and provide a search engine to search across that content. The OpenNLP library (https://opennlp.apache.org/) has also been used to enhance the search. Cached files are already provided in the cache folder.
 
 # Below are the endpoints:
 
@@ -16,6 +16,12 @@ The endpoint above allows to make a search across all the condition pages, whose
 
 ```
 ["http://www.nhs.uk/conditions/achalasia","http://www.nhs.uk/conditions/Acoustic-neuroma"]
+```
+
+# Run the application
+
+```
+mvn package && java -jar target/search-engine-0.1.0.jar
 ```
 
 # Area of improvement
