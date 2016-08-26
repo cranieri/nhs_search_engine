@@ -17,10 +17,8 @@ import java.util.logging.Logger;
 @Component
 public class SearchEngine {
 
-    @Autowired
     private NLPHelper nlpHelper;
 
-    @Autowired
     private CacheReader cacheReader;
 
     public SearchEngine(CacheReader cacheReader, NLPHelper nlpHelper) {
